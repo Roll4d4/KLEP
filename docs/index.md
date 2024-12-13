@@ -1,5 +1,6 @@
 # Welcome to KLEP
 
+![KLEP Logo](logo.png)
 KLEP (Key-Lock Executable Process) is a groundbreaking symbolic AI system.
 
 ## What is KLEP?
