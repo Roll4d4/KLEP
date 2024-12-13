@@ -1,0 +1,91 @@
+KLEPExecutableBaseEditor
+
+Overview
+
+This editor script customizes the Unity Editor for objects of type KLEPExecutableBase and its subclasses. It provides a specialized interface for managing key loaders and the keys associated with the selected KLEPExecutableBase instances.
+Functionalities
+
+    Dynamic Key Loader Selection: Allows users to select which SLASHkeyLoader instances are associated with the KLEPExecutableBase script directly from the editor. This is facilitated through a list of checkboxes, each representing a SLASHkeyLoader available in the project.
+
+    Key Management: Offers an interface to view and edit the keys available after the execution of the KLEPExecutableBase script. It includes functionality to add new keys and assign them from a list of all keys provided by the associated key loaders. This helps in managing which keys are relevant after certain actions or behaviors are executed within your game or application.
+
+    Loader-Key Synchronization: Features a button to synchronize keys to the selected key loader, ensuring that the KLEPExecutableBase script and its key loaders are up to date with each other. This can include adding missing keys to the key loaders based on the script’s requirements.
+
+    Direct Interaction: Employs GUI elements such as buttons, dropdowns, and checkboxes for a user-friendly interface. This direct interaction allows users to efficiently manage key loaders and their keys without diving into the script's code.
+
+    Automatic Updates and Saves: Implements mechanisms to automatically apply changes made through the editor script to the actual KLEPExecutableBase instances and their associated key loaders. This includes marking assets as dirty to ensure changes are saved and refreshing the AssetDatabase to reflect updates in the Unity Editor.
+
+    Editor Utility Integration: Leverages Unity's Editor utility functions for tasks such as finding assets, displaying popup lists, and saving changes. This integration enhances the editor script’s functionality and ensures seamless operation within the Unity Editor environment.
+
+Goal
+
+The primary goal of this editor script is to streamline the process of configuring KLEPExecutableBase instances and their interactions with key loaders. By providing a customized interface for these configurations, the script aims to improve the efficiency and ease of setup for game developers working within the Unity Editor, particularly those dealing with complex key management and behavior execution scenarios in their projects.
+
+KLEPKeyEditor
+
+This editor script customizes the Unity Editor interface for objects of the KLEPKey class. It facilitates the management of key properties, allowing users to easily assign keys to SLASHkeyLoader instances and edit or synchronize the key properties directly within the Unity Editor. Here’s what it accomplishes:
+Key Properties Management
+
+The script provides a detailed editor interface for KLEPKey objects, allowing for the inspection and modification of key properties. This includes managing basic properties like bools, integers, and strings, as well as more complex types like lists of vectors or transforms. This functionality is crucial for setting up and managing the properties that affect gameplay or system behavior based on the keys.
+SLASHkeyLoader Association
+
+It allows users to associate a KLEPKey with a SLASHkeyLoader directly from the editor. This association is crucial for defining which loader is responsible for handling the key, enabling a structured and organized management system for all keys within the project.
+Synchronization with KeyLoader
+
+A button is provided to synchronize the key's properties with its associated SLASHkeyLoader, ensuring consistency and up-to-date information across the system. This feature is particularly useful when properties need to be propagated or updated across multiple keys managed by the same loader.
+Dynamic Property Editing
+
+The script dynamically generates editor fields for editing the properties of a KLEPKey based on its type. This flexible approach allows for the editing of various property types, including custom ones defined by the developer, directly within the Unity Editor without needing to modify the source code.
+Enhancing Workflow
+
+By providing a user-friendly interface for managing KLEPKey properties and their associations with key loaders, this script significantly enhances the workflow for setting up keys within the Unity Editor. It reduces the need for manual editing of properties through code and streamlines the process of key configuration.
+Goal
+
+The primary goal of this editor script is to simplify the process of managing keys within Unity projects, especially those with complex systems or a large number of keys. It aims to provide a more intuitive and efficient way to set up and manage keys, improving productivity and reducing the potential for errors during development.
+
+KLEPLockEditor
+
+This editor script customizes the Unity Editor interface for objects of the KLEPLock class. It enables developers to configure lock conditions directly within the Unity Editor with an enhanced, user-friendly interface. Here’s an overview of its functionalities:
+Enhancing KLEPLock Configuration
+
+The script provides a specialized editor for KLEPLock objects, allowing developers to easily define conditions under which a lock is considered satisfied. This includes selecting which keys are relevant to the lock, whether their presence or absence is significant, and how these conditions are combined (e.g., AND/OR conditions).
+SLASHkeyLoader Association
+
+It facilitates the association of KLEPLock objects with one or more SLASHkeyLoader instances. This association is crucial as it determines which keys are available for setting up the lock conditions, ensuring that locks are only configured with keys that are relevant and managed within the project.
+Condition Management
+
+Developers can dynamically add, edit, or remove conditions directly from the lock's inspector. Each condition can specify a key, whether the key must be present or absent, and whether the condition should be treated as part of an OR group with the next condition. This flexibility allows for complex lock configurations to be easily managed.
+Key Selection Dropdown
+
+For each condition, a dropdown menu populated with keys from the associated SLASHkeyLoader instances allows for easy selection of keys relevant to the lock condition. This ensures that only valid keys are considered for each condition, reducing configuration errors.
+Immediate Feedback and Application
+
+Changes made through the editor are immediately applied to the KLEPLock object, and the Unity project is updated to reflect these changes. This instant feedback loop allows developers to quickly iterate on lock configurations and see the results of their adjustments in real-time.
+Streamlining Lock Setup
+
+By providing a direct and intuitive interface for configuring KLEPLock conditions, this editor script streamlines the setup process. It reduces the complexity of manually coding lock conditions and enhances the workflow for developers, particularly when dealing with a large number of locks or complex condition logic.
+Objective
+
+The primary objective of this editor script is to simplify and enhance the process of configuring locks within Unity projects. By providing a powerful and intuitive user interface, it aims to improve productivity, reduce errors, and make the setup of locks more accessible to developers, especially those who may not be deeply familiar with coding lock logic manually.
+
+SLASHkeyLoaderEditor
+
+This editor script is designed to customize the Unity Editor interface for SLASHkeyLoader objects, enhancing the workflow for managing key properties within the Unity environment. Here’s a breakdown of its primary functionalities and objectives:
+Key Property Management
+
+The script provides a user-friendly interface for viewing and editing the properties associated with a SLASHkeyLoader. This includes managing a list of properties that keys managed by this loader might have, such as whether a key should be unique, its type, and its default value.
+Dynamic Property Editing
+
+Developers can dynamically add, modify, or remove properties directly from the SLASHkeyLoader's inspector window. This includes setting the property name (either choosing from predefined names or defining a custom name), specifying the property's type (e.g., Boolean, Integer, String), and setting a default value for the property.
+User Interface Enhancements
+
+The script enhances the visual layout and interaction with the SLASHkeyLoader properties within the Unity Editor. It uses a combination of labels, text fields, dropdowns, and buttons to provide a clear and intuitive interface for property management. The use of a custom GUIStyle for headers further improves the readability and organization of the interface.
+Immediate Feedback and Application
+
+Changes made through the interface are immediately applied, allowing for a smooth and efficient workflow. This instant feedback loop enables developers to quickly iterate on key configurations and see the effects of their adjustments in real time.
+Simplification of Complex Configurations
+
+By providing direct access to modify SLASHkeyLoader properties within the Unity Editor, this script significantly simplifies the process of configuring and managing key properties. It reduces the need for manual coding and lowers the barrier for setting up complex key configurations, making the system more accessible to developers who may not be deeply familiar with scripting in Unity.
+Objective
+
+The primary goal of this editor script is to streamline and enhance the process of configuring SLASHkeyLoader objects within Unity projects. It aims to improve efficiency, reduce potential errors, and make the setup of key properties more accessible and user-friendly for developers.
