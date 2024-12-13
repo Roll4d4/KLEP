@@ -187,7 +187,6 @@ KLEP is built for Unity (in C#) for interactive experimentation and rapid protot
 **Status:** Stable and included as part of the system’s development history and conceptual framework.
 
 [Learn More (Philosophy)](trainyard-Original.md)
-[Learn More (Philosophy)](trainyard-Extended.md)
 
 ---
 
