@@ -8,9 +8,9 @@ KLEP (Key-Lock Executable Process) is a groundbreaking symbolic AI system.
 
 ## How to Use This Page
 
-This is the official landing page for **KLEP**, a symbolic AI framework inspired by human cognition and designed to mimic human decision making through symbolic logic.  
+This is the official landing page for **KLEP**, a symbolic AI framework inspired by human cognition and designed to mimic human decision-making through symbolic logic.  
 
-If fully realized, KLEP aims to simulate thought processes and decision making like humans, but failing that, it will stand as a robust logical framework for systems and games.
+If fully realized, KLEP aims to simulate thought processes and decision-making like humans. Failing that, it will stand as a robust logical framework for use in systems and games.
 
 Below, you’ll find sections detailing the various parts of KLEP. Each section has a flag indicating its status:
 
@@ -22,6 +22,18 @@ Below, you’ll find sections detailing the various parts of KLEP. Each section 
   </ul>
 </div>
 
+### About This Page
+
+This page explores the **philosophical** and **conceptual** aspects of KLEP, the foundations that inspire its logic, and the reflections on what it means to be a "thinking machine." This can be thought of as the **humanities side** of the project—an examination of the deeper questions behind the system.
+
+Meanwhile, the **project page** focuses on the **practical implementation** of these ideas through code. This dual approach allows us to bridge theory and application, addressing both the "why" and the "how" of KLEP.
+
+### Why Unity and C#?
+
+I believe that we **find ourselves through play**, and so the code presented here is geared toward the Unity engine, written in C#. This choice reflects the intent to make KLEP not only an AI framework but also a tool for creativity, experimentation, and exploration. However, the concepts and logic behind KLEP are universal, making it applicable to any system requiring decision-making as agile as humans.
+
+---
+### What can KLEP do for me right now? 
 ---
 
 ## Section Pages
@@ -39,8 +51,15 @@ Below, you’ll find sections detailing the various parts of KLEP. Each section 
 ### Neuron 🟢
 The foundational unit of KLEP. Neurons handle the management of keys, locks, and executables.
 
-### Key 🟢
-Keys are the primary mechanism by which KLEP processes symbolic information. They are pushed, pulled, and manipulated to drive logic.
+Key (🟢)
+
+View Key Details
+
+    Symbolic Property Management (🟢): Handles a set of properties representing various attributes of the Key, ensuring flexible and extensible data handling.
+    Loader Integration (🟢): Synchronizes Key properties with a keyLoader resource, providing dynamic initialization and updates based on predefined defaults.
+    Attractiveness and Prioritization (🟢): Incorporates "attractiveness" as a factor that can guide decision-making and sorting, aiding systems that must select among multiple keys.
+    Runtime Property Adjustments (🟢): Allows adding, removing, and resetting properties at runtime, facilitating dynamic changes in logic and behavior.
+    Seamless Lock Integration (🟢): Designed to fit into the Key→Lock pipeline, ensuring easy validation and control flow when passing Keys through Locks and Executables.
 
 ### Lock 🟢
 Locks validate keys and control access to executables, ensuring proper sequencing in symbolic logic.
