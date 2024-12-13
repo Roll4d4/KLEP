@@ -148,7 +148,7 @@ KLEP is built for Unity (in C#) for interactive experimentation and rapid protot
 .- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
 .- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
 
-**WARNING:** The following systems are not present in the GitHub repository until further testing and development has been conducted.
+###**WARNING:** The following systems are not present in the GitHub repository until further testing and development has been conducted.
 
 .- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
 .- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
@@ -187,6 +187,25 @@ KLEP is built for Unity (in C#) for interactive experimentation and rapid protot
 **Status:** Stable and included as part of the system’s development history and conceptual framework.
 
 [Learn More (Philosophy)](trainyard-history.md)
+
+---
+
+.- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
+.- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
+
+###**WARNING:** The following systems are not present in the GitHub repository and are theoretical.
+
+.- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
+.- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
+
+---
+
+### 11. KlepImagination (🔴)
+**What It Is:** A conceptual future layer where keys and locks become a specialized “AI language.” Imagine training a large language model (akin to GPT) exclusively on KLEP’s symbolic framework—its keys, locks, and executables—so it can invent new behaviors and reasoning patterns internally. Instead of just following predefined logic, it would learn to “speak” in KLEP’s language of symbols and conditions, expanding its capabilities beyond manual coding.
+
+**Status:** Purely theoretical. The vision is there, but no implementation exists yet. KlepImagination is a long-term goal that could fundamentally reshape how KLEP evolves its logic, potentially enabling a system to self-author its strategies.
+
+[Learn More (Philosophy)](klepimagination-theory.md)
 
 ---
 
