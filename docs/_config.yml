@@ -1,8 +1,6 @@
-title: "KLEP - Key Lock Executable Process"
+title: "KLEP"
 description: "Revolutionizing symbolic AI"
-theme: jekyll-theme-cayman 
-url: "https://roll4d4.github.io/KLEP"
-twitter_username: roll4d4
+theme: jekyll-theme-cayman
 nav_links:
   - title: "Home"
     url: /
