@@ -9,6 +9,7 @@ KLEP (Key-Lock Executable Process) is a groundbreaking symbolic AI system.
 ## How to Use This Page
 
 This is the official landing page for **KLEP**, a symbolic AI framework inspired by human cognition and designed to mimic human decision making through symbolic logic.  
+
 If fully realized, KLEP aims to simulate thought processes and decision making like humans, but failing that, it will stand as a robust logical framework for systems and games.
 
 Below, you’ll find sections detailing the various parts of KLEP. Each section has a flag indicating its status:
