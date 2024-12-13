@@ -1,6 +1,6 @@
 title: "KLEP"
 description: "Revolutionizing symbolic AI"
-theme: jekyll-theme-minimal
+theme: minimal
 nav_links:
   - title: "Home"
     url: /
@@ -12,4 +12,3 @@ nav_links:
     url: https://twitter.com/roll4d4
   - title: "Roll4d4.com"
     url: https://roll4d4.com
----
