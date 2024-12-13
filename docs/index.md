@@ -143,41 +143,45 @@ KLEP is built for Unity (in C#) for interactive experimentation and rapid protot
 - **Logging & Debugging (🟢)**: Built-in event log for transparency.  
 - **Scalable Integration (🟢)**: Grows effortlessly with your project’s complexity.
 </details>
-
 ---
-###  The following are not present in the Github repository until further testing and developent has been conducted.
+### The following are not present in the Github repository until further testing and development has been conducted.
 ---
 
 ### 7. Ethical and Emotional Layers (🟡)
-**What It Is:** An experimental framework to incorporate morality and emotional states into decision-making, going beyond raw logic or simple cost-benefit analysis. By providing AI with "values" or "feelings," decisions can become more relatable and narrative-driven—ideal for story-rich contexts.
+**What It Is:** Envisions AI with moral and emotional underpinnings rather than purely logical choices—useful for narrative-rich or character-driven scenarios.
 
-**Status:** Early testing. The groundwork is there, but it’s not fully validated. Still, the vision is to have a system that can weigh ethical dilemmas, reflect preferences, and create emotionally resonant choices.
+**Status:** In testing. The core idea exists, but it’s still evolving. Further experimentation and refinement are needed.
+
+[Learn More (Philosophy)](ethics-emotions.md)
 
 ---
 
 ### 8. Memory (🟡)
-**What It Is:** A concept to give KLEP a sense of history. The idea is that the system learns from past encounters (keys, actions, outcomes) and uses this history to guide future decisions. Instead of treating each moment in isolation, KLEP can recall and apply past lessons—laying the groundwork for more adaptive, long-term behavior.
+**What It Is:** Introduces long-term recall, letting KLEP remember past encounters and learn from them, rather than treating each moment in isolation.
 
-**Status:** Prototype stage. The basic logic is understood, but more testing and refinement are needed before memory can reliably shape strategy in complex scenarios.
+**Status:** Early prototype. Basic logic is known, but more validation is required before it influences decision-making reliably.
+
+[Learn More (Philosophy)](memory-concepts.md)
 
 ---
 
 ### 9. Angles and Demons (🟡)
-**What It Is:** A metaphorical set of advisors—“Aron” and “Nora”—that embody opposing strategies for problem-solving. When KLEP encounters uncertain conditions (unfamiliar keys, low confidence in actions), these advisors weigh in. One angle might push for exploration (like MCTS: searching broader, trying new paths), while the other angle advocates exploitation (like A*: leaning on known successes to find reliable outcomes quickly).
+**What It Is:** A conceptual pair of advisors—one urging exploration (Aron) and the other favoring exploitation (Nora). They help KLEP adapt when facing uncertainty, toggling between broad searching (like MCTS) and known shortcuts (like A*).
 
-This interplay allows KLEP to adapt its decision-making style: under uncertainty, it might give more weight to the explorer’s advice, cycling through more complex reasoning steps. Over time, as patterns emerge and confidence grows, the system can favor the exploitative strategy that yields consistent results. Combined with the SLASH system for communication, these “Angles and Demons” enable KLEP to dynamically adjust its approach to novel problems, balancing experimentation against known tactics.
+**Status:** Conceptual stage. The theory is there, but practical tests are needed to confirm its effectiveness in guiding decisions.
 
-**Status:** Conceptual testing. The roles of Aron (exploration) and Nora (exploitation) are defined, and the logic for shifting decision-making emphasis exists in theory. Further development is needed to see how well this system can truly refine KLEP’s strategy under real-world conditions.
+[Learn More (Philosophy)](angles-demons.md)
 
 ---
 
 ### 10. The Trainyard (🟢)
-**What It Is:** A stable, working test environment where all these concepts can be tried out and debugged. It’s the sandbox that ensures keys, locks, executables, and various decision-making strategies behave as intended before being deployed in a larger project.
+**What It Is:** A metaphorical “lab” that helped shape the understanding of KLEP. Historically and conceptually important, it offers a testing ground to ensure that keys, locks, and executables interact as intended before real-world application.
 
-[Learn More About The Trainyard](trainyard.md)
+**Status:** Stable and included as part of the system’s development history and conceptual framework.
+
+[Learn More (Philosophy)](trainyard-history.md)
 
 ---
-
 
 ## Learn More
 
