@@ -2,17 +2,13 @@
 
 ![KLEP Logo](images/logo.png)
 
-KLEP (Key-Lock Executable Process) is a groundbreaking symbolic AI system.
+KLEP (Key-Lock Executable Process) is a symbolic AI system where decision-making emerges from the interaction of keys, locks, and executables—much like neurons firing in a brain.
 
 ---
 
 ## How to Use This Page
 
-This is the official landing page for **KLEP**, a symbolic AI framework inspired by human cognition and designed to mimic human decision-making through symbolic logic.  
-
-If fully realized, KLEP aims to simulate thought processes and decision-making like humans. Failing that, it will stand as a robust logical framework for use in systems and games.
-
-Below, you’ll find sections detailing the various systems of KLEP. Each section has a flag indicating its status:
+Welcome to KLEP, where AI can think with symbolic logic, adapt through experience, and generate decisions like a human mind. Each component of KLEP is introduced below, with a **one-line summary** and collapsible feature sections for clarity. The status indicators show how mature each component is:
 
 <div style="border: 1px solid #444; background-color: #000; padding: 5px; border-radius: 5px; color: #fff;">
   <ul>
@@ -22,94 +18,156 @@ Below, you’ll find sections detailing the various systems of KLEP. Each sectio
   </ul>
 </div>
 
-Each section will contain a link to a more indepth discussion of the sytem and what it does and why it does what it does. Below that, you will find each section has a list of features that KLEP provides within that specific system. These features will follow the same color coding as the sections holistic compleation view to show you what needs work and what the system can do for you today.
-
-### About This Page
-
-This page explores the **philosophical** and **conceptual** aspects of KLEP, the foundations that inspire its logic, and the reflections on what it means to be a "thinking machine." This can be thought of as the **humanities side** of the project—an examination of the deeper questions behind the system.
-
-Meanwhile, the **project page** focuses on the **practical implementation** of these ideas through code. This dual approach allows us to bridge theory and application, addressing both the "why" and the "how" of KLEP.
+**Note:** This page covers the conceptual and philosophical side of KLEP. The [Project Page](project.md) delves deeper into the practical and technical details.
 
 ### Why Unity and C#?
 
-I believe that we **find ourselves through play**, and so the code presented here is geared toward the Unity engine, written in C#. This choice reflects the intent to make KLEP not only an AI framework but also a tool for creativity, experimentation, and exploration. However, the concepts and logic behind KLEP are universal, making it applicable to any system requiring decision-making as agile as humans.
+KLEP is built for Unity (in C#) for interactive experimentation and rapid prototyping. The underlying logic, however, applies universally—use KLEP in any context that requires agile, human-like reasoning.
 
 ---
 
-## The Components of KLEP
+## Core Systems
 
 ### Neuron (🟢)
+**What it does:** The Neuron acts as the central node, synchronizing keys and executables to maintain a coherent logic network.
 
-View Neuron Details
+[View Neuron Details](neuron.md)
 
-  Key Management (🟢): Dynamically acquires, holds, and releases symbolic keys as events unfold.
-  Executable Synchronization (🟢): Continuously detects and integrates executable components into the logic network, ensuring the neuron’s internal logic remains coherent and up-to-date.
-  Event Integration (🟢): Interacts with a universal event bridge, allowing seamless communication across the KLEP framework, facilitating complex, multi-layered decision-making.
-  Agent Coordination (🟢): Provides a stable and accessible interface for higher-level agents to guide and influence the neuron’s behavior, enabling scalable complexity in reasoning.
-    
-### Key-Lock System(🟢)
+<details>
+<summary>Features (Click to expand)</summary>
 
-View Key-Lock Details
+- **Key Management (🟢)**: Dynamically acquires, holds, and releases symbolic keys as events unfold.  
+- **Executable Synchronization (🟢)**: Continuously detects and integrates executable components, keeping logic coherent.  
+- **Event Integration (🟢)**: Hooks into the Bridge to facilitate complex, multi-layered decision-making.  
+- **Agent Coordination (🟢)**: Interfaces with higher-level agents, enabling scalable complexity in reasoning.
+</details>
 
-  Symbolic Property Management (🟢): Handles a set of properties representing various attributes of the Key, ensuring flexible and extensible data handling.
-  Loader Integration (🟢): Synchronizes Key properties with a keyLoader resource, providing dynamic initialization and updates based on predefined defaults.
-  Attractiveness and Prioritization (🟢): Incorporates "attractiveness" as a factor that can guide decision-making and sorting, aiding systems that must select among multiple keys.
-  Runtime Property Adjustments (🟢): Allows adding, removing, and resetting properties at runtime, facilitating dynamic changes in logic and behavior.
-  Seamless Lock Integration (🟢): Designed to fit into the Key→Lock pipeline, ensuring easy validation and control flow when passing Keys through Locks and Executables.
+---
 
-### Lock 🟢
-Locks validate keys and control access to executables, ensuring proper sequencing in symbolic logic.
+### Key-Lock System (🟢)
+**What it does:** The Key-Lock system encapsulates data and conditions—Keys carry symbolic info, and Locks validate them, ensuring logical order.
 
-Agent (🟢)
+[View Key-Lock Details](key-lock.md)
 
-View Agent Details
+<details>
+<summary>Features (Click to expand)</summary>
 
-   Decision-Making Core (🟢): Selects actions (executables) based on Q-values and attraction values, learning from feedback and adjusting behavior over time.
-   Q-Learning Integration (🟢): Maintains a Q-table to track and update the value of actions, reinforcing those that yield positive outcomes.
-   Non-Forced Action Selection (🟢): Will not select any action if none meet a defined certainty threshold, modeling “patience” and waiting for more favorable conditions.
-   Flexible Framework (🟢): Operates over a wide range of executables, supporting both “in-tandem” and “solo” actions, as well as goals that can provide substitute actions.
-   State Transitions (🟢): Handles OnEnterState/OnExitState callbacks, enabling executables to have stateful logic that reacts to selection and deselection.
+- **Symbolic Property Management (🟢)**: Keys have flexible, extensible properties.  
+- **Loader Integration (🟢)**: Synchronize properties with `SLASHkeyLoader` for dynamic defaults.  
+- **Attractiveness & Prioritization (🟢)**: Rank keys for decision-making.  
+- **Runtime Adjustments (🟢)**: Add/remove properties on-the-fly.  
+- **Seamless Lock Integration (🟢)**: Easy validation pipeline from Keys to Executables.
+</details>
 
-Executable (🟢)
+---
 
-View Executable Details
+### SLASH System (🟢)
+**What it does:** The SLASH system provides dynamic loaders and managers for keys, enabling runtime creation, updating, and serialization of key data.
 
-   Validation and Execution Flow (🟢): Before running, executables must pass validation locks and execution locks to ensure that required conditions are met. This prevents logic from firing prematurely and maintains a clean, predictable logic flow.
-   Attraction Calculation (🟢): Computes an “attraction” score based on the properties of keys that satisfy its conditions. This allows the Agent or other decision-making layers to pick the most suitable action at any given time.
-   Flexible Key Interaction (🟢): Capable of pushing keys into the neuron or buffering them for the next frame. This ensures a fluid exchange of symbolic data between different parts of the KLEP system.
-   Modular Lifecycle (🟢): Provides hooks (OnEnterState, OnExitState, Execute, ExecutableUpdates, ExecutableFixedUpdate) that make it easy to extend behavior. Executables can be simple or complex, depending on the system’s needs.
-   Compatibility with the Agent and Goals (🟢): Works with the Agent’s decision-making routines and can be managed by goals, forming layered logic structures and scenario-driven behavior.
+[View SLASH System Details](slash.md)
 
-Goal (🟡)
+<details>
+<summary>Features (Click to expand)</summary>
 
-View Goal Details
+- **Dynamic Key Creation (🟢)**: Generate new keys on demand with `SLASHkeyLoader`.  
+- **Property Synchronization (🟢)**: Ensure keys always have the right defaults and attributes.  
+- **Foreign Keys Allowed (🟢)**: Extend keys beyond their initial definitions if desired.  
+- **Serialization Support (🟢)**: Save and load key states for persistence.  
+- **Adaptive Loaders (🟢)**: Select loaders based on property matches, ensuring keys remain compatible over time.
+</details>
 
-   Layered Execution (🟡): Organizes executables into ordered layers, each with specific completion requirements. Goals can represent multi-step plans where each layer depends on the previous one.
-   Conditional Advancement (🟡): Uses configurable execution requirements (AllMustFire, AnyCanFire, NoneNeedToFire) to determine when it’s time to proceed to the next layer, supporting complex, branching logic.
-   Activation Keys (🟡): May issue special activation keys to signal that the goal’s conditions have been met, influencing other parts of the system.
-   Progress Tracking (🟡): Supports “progress tracking” by remembering the current layer, optionally resetting or continuing from previous states, enabling more narrative or stateful logic flows.
-   Integration with the Agent (🟡): Although goals are conceptually robust, they have not been extensively tested in all scenarios. Their logic should be considered stable enough for experimentation, but additional testing and refinement may be needed before confidently declaring them fully “Green.”
+---
 
-### Ethical and Emotional Layers 🟡
-A developing system to simulate ethical reasoning and emotional states.
+### Agent (🟢)
+**What it does:** The Agent makes decisions by evaluating actions through Q-learning and attraction values, and can choose patience if no action is worthwhile.
 
-### Memory 🟡
-A memory layer to retain information and guide decision-making over time.
+[View Agent Details](agent.md)
 
-### Angles and Demons 🟡
-A conceptual layer exploring different perspectives (angles) and biases (demons) in decision-making.
+<details>
+<summary>Features (Click to expand)</summary>
 
-### The Trainyard 🟢
-A simulation tool used to test and debug the interactions between keys, locks, and agents.
+- **Decision-Making Core (🟢)**: Picks actions based on Q-values and attraction.  
+- **Q-Learning Integration (🟢)**: Adapts over time, reinforcing successful actions.  
+- **Non-Forced Action Selection (🟢)**: Can opt to wait rather than choose a poor action.  
+- **Flexible Framework (🟢)**: Handles solo and in-tandem executables, plus goal logic.  
+- **State Transitions (🟢)**: Manage lifecycles with OnEnter/OnExit callbacks.
+</details>
 
-### Theoretical Layers 🔴
-Conceptual components (like creativity) that have no implemented code but provide a roadmap for future exploration.
+---
+
+### Executable (🟢)
+**What it does:** Executables are the actions the system can take, firing when their conditions are met, guided by keys and locks.
+
+[View Executable Details](executable.md)
+
+<details>
+<summary>Features (Click to expand)</summary>
+
+- **Validation & Execution Flow (🟢)**: Run only when conditions are met.  
+- **Attraction Calculation (🟢)**: Score potential actions for better decision-making.  
+- **Key Interaction (🟢)**: Push or buffer keys dynamically.  
+- **Modular Lifecycle (🟢)**: Hooks for custom OnEnter/OnExit/Execute behavior.  
+- **Integration with Agent & Goals (🟢)**: Fits seamlessly into higher-level logic.
+</details>
+
+---
+
+### Goal (🟡)
+**What it does:** Goals provide layered, multi-step plans that coordinate complex scenarios, though they’re still under testing.
+
+[View Goal Details](goal.md)
+
+<details>
+<summary>Features (Click to expand)</summary>
+
+- **Layered Execution (🟡)**: Multi-step logic sequences.  
+- **Conditional Advancement (🟡)**: Move forward only when conditions are met.  
+- **Activation Keys (🟡)**: Signal progress to the rest of the system.  
+- **Progress Tracking (🟡)**: Remember past states to shape future actions.  
+- **Agent Integration (🟡)**: Conceptually sound but needs more testing before going Green.
+</details>
+
+---
+
+### Bridge (🟢)
+**What it does:** The Bridge is a central event bus, enabling loose coupling between all components.
+
+[View Bridge Details](bridge.md)
+
+<details>
+<summary>Features (Click to expand)</summary>
+
+- **Centralized Event System (🟢)**: Broadcast and listen without direct references.  
+- **Frame-Specific Tracking (🟢)**: Know exactly what happened this frame.  
+- **Flexible Registration (🟢)**: Add or remove listeners at will.  
+- **Logging & Debugging (🟢)**: Built-in event log for transparency.  
+- **Scalable Integration (🟢)**: Grows effortlessly with your project’s complexity.
+</details>
+
+---
+
+### Ethical and Emotional Layers (🟡)
+**What it does:** Emerging modules to simulate moral judgments and emotional contexts—promising ideas, but still in early testing.
+
+### Memory (🟡)
+**What it does:** A memory system to recall past keys and influence future reasoning—under development.
+
+### Angles and Demons (🟡)
+**What it does:** Exploring biases and viewpoints to add depth and "personality" to decisions—experimental but promising.
+
+### The Trainyard (🟢)
+**What it does:** A sandbox environment to test and debug keys, locks, and agents—reliable and ready for practical use.
+
+### Theoretical Layers (🔴)
+**What it does:** Concepts like creativity or curiosity that remain purely theoretical—no code yet, just a vision for the future.
 
 ---
 
 ## Learn More
 
-Visit the [GitHub Repository](https://github.com/Roll4d4/KLEP) for practical usage and code.
+- [GitHub Repository](https://github.com/Roll4d4/KLEP) – Dive into the code and examples.
+- [Follow on Twitter](https://twitter.com/roll4d4) – Latest updates and insights.
 
-[Follow us on Twitter](https://twitter.com/roll4d4)  
+By integrating these systems—Neuron, Keys, Locks, Executables, Goals, the Bridge, and the SLASH dynamic loading layer—you can craft AI scenarios that are transparent, adaptable, and genuinely interesting. KLEP aims to merge theory with practice, giving you a new way to model and build thinking machines.  
+
 [Visit Roll4d4.com](https://roll4d4.com)
