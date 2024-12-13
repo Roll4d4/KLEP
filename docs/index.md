@@ -12,15 +12,17 @@ This is the official landing page for **KLEP**, a symbolic AI framework inspired
 
 If fully realized, KLEP aims to simulate thought processes and decision-making like humans. Failing that, it will stand as a robust logical framework for use in systems and games.
 
-Below, you’ll find sections detailing the various parts of KLEP. Each section has a flag indicating its status:
+Below, you’ll find sections detailing the various systems of KLEP. Each section has a flag indicating its status:
 
-<div style="border: 1px solid #444; background-color: #000; padding: 10px; border-radius: 5px; color: #fff;">
+<div style="border: 1px solid #444; background-color: #000; padding: 5px; border-radius: 5px; color: #fff;">
   <ul>
     <li>🟢 <strong>Green</strong>: Tested and fully functional.</li>
     <li>🟡 <strong>Yellow</strong>: Code exists but requires more testing.</li>
     <li>🔴 <strong>Red</strong>: Theoretical; no code yet.</li>
   </ul>
 </div>
+
+Each section will contain a link to a more indepth discussion of the sytem and what it does and why it does what it does. Below that, you will find each section has a list of features that KLEP provides within that specific system. These features will follow the same color coding as the sections holistic compleation view to show you what needs work and what the system can do for you today.
 
 ### About This Page
 
@@ -31,18 +33,6 @@ Meanwhile, the **project page** focuses on the **practical implementation** of t
 ### Why Unity and C#?
 
 I believe that we **find ourselves through play**, and so the code presented here is geared toward the Unity engine, written in C#. This choice reflects the intent to make KLEP not only an AI framework but also a tool for creativity, experimentation, and exploration. However, the concepts and logic behind KLEP are universal, making it applicable to any system requiring decision-making as agile as humans.
-
----
-### What can KLEP do for me right now? 
----
-
-## Section Pages
-
-- [About KLEP](about.md)  
-  A deeper dive into KLEP and its goals.
-
-- [About 4d4 Studio](about-4d4.md)  
-  Information about the creator of KLEP and the vision behind it.
 
 ---
 
