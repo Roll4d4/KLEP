@@ -14,9 +14,13 @@ If fully realized, KLEP aims to simulate thought processes and decision making l
 
 Below, you’ll find sections detailing the various parts of KLEP. Each section has a flag indicating its status:
 
-- 🟢 **Green**: Tested and fully functional.
-- 🟡 **Yellow**: Code exists in some state but requires more testing.
-- 🔴 **Red**: Theoretical; no code yet, very possibly out of my leauge.
+<div style="border: 1px solid #444; background-color: #000; padding: 10px; border-radius: 5px; color: #fff;">
+  <ul>
+    <li>🟢 <strong>Green</strong>: Tested and fully functional.</li>
+    <li>🟡 <strong>Yellow</strong>: Code exists but requires more testing.</li>
+    <li>🔴 <strong>Red</strong>: Theoretical; no code yet.</li>
+  </ul>
+</div>
 
 ---
 
