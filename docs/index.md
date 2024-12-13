@@ -143,8 +143,15 @@ KLEP is built for Unity (in C#) for interactive experimentation and rapid protot
 - **Logging & Debugging (🟢)**: Built-in event log for transparency.  
 - **Scalable Integration (🟢)**: Grows effortlessly with your project’s complexity.
 </details>
+
 ---
-### The following are not present in the Github repository until further testing and development has been conducted.
+.- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
+.- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
+
+**WARNING:** The following systems are not present in the GitHub repository until further testing and development has been conducted.
+
+.- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
+.- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
 ---
 
 ### 7. Ethical and Emotional Layers (🟡)
