@@ -38,24 +38,57 @@ I believe that we **find ourselves through play**, and so the code presented her
 
 ## The Components of KLEP
 
-### Neuron 🟢
-The foundational unit of KLEP. Neurons handle the management of keys, locks, and executables.
+### Neuron (🟢)
 
-Key (🟢)
+View Neuron Details
 
-View Key Details
+  Key Management (🟢): Dynamically acquires, holds, and releases symbolic keys as events unfold.
+  Executable Synchronization (🟢): Continuously detects and integrates executable components into the logic network, ensuring the neuron’s internal logic remains coherent and up-to-date.
+  Event Integration (🟢): Interacts with a universal event bridge, allowing seamless communication across the KLEP framework, facilitating complex, multi-layered decision-making.
+  Agent Coordination (🟢): Provides a stable and accessible interface for higher-level agents to guide and influence the neuron’s behavior, enabling scalable complexity in reasoning.
+    
+### Key-Lock System(🟢)
 
-    Symbolic Property Management (🟢): Handles a set of properties representing various attributes of the Key, ensuring flexible and extensible data handling.
-    Loader Integration (🟢): Synchronizes Key properties with a keyLoader resource, providing dynamic initialization and updates based on predefined defaults.
-    Attractiveness and Prioritization (🟢): Incorporates "attractiveness" as a factor that can guide decision-making and sorting, aiding systems that must select among multiple keys.
-    Runtime Property Adjustments (🟢): Allows adding, removing, and resetting properties at runtime, facilitating dynamic changes in logic and behavior.
-    Seamless Lock Integration (🟢): Designed to fit into the Key→Lock pipeline, ensuring easy validation and control flow when passing Keys through Locks and Executables.
+View Key-Lock Details
+
+  Symbolic Property Management (🟢): Handles a set of properties representing various attributes of the Key, ensuring flexible and extensible data handling.
+  Loader Integration (🟢): Synchronizes Key properties with a keyLoader resource, providing dynamic initialization and updates based on predefined defaults.
+  Attractiveness and Prioritization (🟢): Incorporates "attractiveness" as a factor that can guide decision-making and sorting, aiding systems that must select among multiple keys.
+  Runtime Property Adjustments (🟢): Allows adding, removing, and resetting properties at runtime, facilitating dynamic changes in logic and behavior.
+  Seamless Lock Integration (🟢): Designed to fit into the Key→Lock pipeline, ensuring easy validation and control flow when passing Keys through Locks and Executables.
 
 ### Lock 🟢
 Locks validate keys and control access to executables, ensuring proper sequencing in symbolic logic.
 
-### Agent 🟢
-The decision-making layer that interacts with neurons and controls higher-order logic.
+Agent (🟢)
+
+View Agent Details
+
+   Decision-Making Core (🟢): Selects actions (executables) based on Q-values and attraction values, learning from feedback and adjusting behavior over time.
+   Q-Learning Integration (🟢): Maintains a Q-table to track and update the value of actions, reinforcing those that yield positive outcomes.
+   Non-Forced Action Selection (🟢): Will not select any action if none meet a defined certainty threshold, modeling “patience” and waiting for more favorable conditions.
+   Flexible Framework (🟢): Operates over a wide range of executables, supporting both “in-tandem” and “solo” actions, as well as goals that can provide substitute actions.
+   State Transitions (🟢): Handles OnEnterState/OnExitState callbacks, enabling executables to have stateful logic that reacts to selection and deselection.
+
+Executable (🟢)
+
+View Executable Details
+
+   Validation and Execution Flow (🟢): Before running, executables must pass validation locks and execution locks to ensure that required conditions are met. This prevents logic from firing prematurely and maintains a clean, predictable logic flow.
+   Attraction Calculation (🟢): Computes an “attraction” score based on the properties of keys that satisfy its conditions. This allows the Agent or other decision-making layers to pick the most suitable action at any given time.
+   Flexible Key Interaction (🟢): Capable of pushing keys into the neuron or buffering them for the next frame. This ensures a fluid exchange of symbolic data between different parts of the KLEP system.
+   Modular Lifecycle (🟢): Provides hooks (OnEnterState, OnExitState, Execute, ExecutableUpdates, ExecutableFixedUpdate) that make it easy to extend behavior. Executables can be simple or complex, depending on the system’s needs.
+   Compatibility with the Agent and Goals (🟢): Works with the Agent’s decision-making routines and can be managed by goals, forming layered logic structures and scenario-driven behavior.
+
+Goal (🟡)
+
+View Goal Details
+
+   Layered Execution (🟡): Organizes executables into ordered layers, each with specific completion requirements. Goals can represent multi-step plans where each layer depends on the previous one.
+   Conditional Advancement (🟡): Uses configurable execution requirements (AllMustFire, AnyCanFire, NoneNeedToFire) to determine when it’s time to proceed to the next layer, supporting complex, branching logic.
+   Activation Keys (🟡): May issue special activation keys to signal that the goal’s conditions have been met, influencing other parts of the system.
+   Progress Tracking (🟡): Supports “progress tracking” by remembering the current layer, optionally resetting or continuing from previous states, enabling more narrative or stateful logic flows.
+   Integration with the Agent (🟡): Although goals are conceptually robust, they have not been extensively tested in all scenarios. Their logic should be considered stable enough for experimentation, but additional testing and refinement may be needed before confidently declaring them fully “Green.”
 
 ### Ethical and Emotional Layers 🟡
 A developing system to simulate ethical reasoning and emotional states.
