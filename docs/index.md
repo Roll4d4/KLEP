@@ -145,23 +145,39 @@ KLEP is built for Unity (in C#) for interactive experimentation and rapid protot
 </details>
 
 ---
+###  The following are not present in the Github repository until further testing and developent has been conducted.
+---
 
-### Ethical and Emotional Layers (🟡)
-**What it does:** Emerging modules to simulate moral judgments and emotional contexts—promising ideas, but still in early testing.
+### 7. Ethical and Emotional Layers (🟡)
+**What It Is:** An experimental framework to incorporate morality and emotional states into decision-making, going beyond raw logic or simple cost-benefit analysis. By providing AI with "values" or "feelings," decisions can become more relatable and narrative-driven—ideal for story-rich contexts.
 
-### Memory (🟡)
-**What it does:** A memory system to recall past keys and influence future reasoning—under development.
-
-### Angles and Demons (🟡)
-**What it does:** Exploring biases and viewpoints to add depth and "personality" to decisions—experimental but promising.
-
-### The Trainyard (🟢)
-**What it does:** A sandbox environment to test and debug keys, locks, and agents—reliable and ready for practical use.
-
-### Theoretical Layers (🔴)
-**What it does:** Concepts like creativity or curiosity that remain purely theoretical—no code yet, just a vision for the future.
+**Status:** Early testing. The groundwork is there, but it’s not fully validated. Still, the vision is to have a system that can weigh ethical dilemmas, reflect preferences, and create emotionally resonant choices.
 
 ---
+
+### 8. Memory (🟡)
+**What It Is:** A concept to give KLEP a sense of history. The idea is that the system learns from past encounters (keys, actions, outcomes) and uses this history to guide future decisions. Instead of treating each moment in isolation, KLEP can recall and apply past lessons—laying the groundwork for more adaptive, long-term behavior.
+
+**Status:** Prototype stage. The basic logic is understood, but more testing and refinement are needed before memory can reliably shape strategy in complex scenarios.
+
+---
+
+### 9. Angles and Demons (🟡)
+**What It Is:** A metaphorical set of advisors—“Aron” and “Nora”—that embody opposing strategies for problem-solving. When KLEP encounters uncertain conditions (unfamiliar keys, low confidence in actions), these advisors weigh in. One angle might push for exploration (like MCTS: searching broader, trying new paths), while the other angle advocates exploitation (like A*: leaning on known successes to find reliable outcomes quickly).
+
+This interplay allows KLEP to adapt its decision-making style: under uncertainty, it might give more weight to the explorer’s advice, cycling through more complex reasoning steps. Over time, as patterns emerge and confidence grows, the system can favor the exploitative strategy that yields consistent results. Combined with the SLASH system for communication, these “Angles and Demons” enable KLEP to dynamically adjust its approach to novel problems, balancing experimentation against known tactics.
+
+**Status:** Conceptual testing. The roles of Aron (exploration) and Nora (exploitation) are defined, and the logic for shifting decision-making emphasis exists in theory. Further development is needed to see how well this system can truly refine KLEP’s strategy under real-world conditions.
+
+---
+
+### 10. The Trainyard (🟢)
+**What It Is:** A stable, working test environment where all these concepts can be tried out and debugged. It’s the sandbox that ensures keys, locks, executables, and various decision-making strategies behave as intended before being deployed in a larger project.
+
+[Learn More About The Trainyard](trainyard.md)
+
+---
+
 
 ## Learn More
 
