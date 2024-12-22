@@ -128,23 +128,6 @@ KLEP is built for Unity (in C#) for interactive experimentation and rapid protot
 </details>
 
 ---
-
-### Bridge (🟢)
-**What it does:** The Bridge is a central event bus, enabling loose coupling between all components.
-
-[View Bridge Details](bridge.md)
-
-<details>
-<summary>Features (Click to expand)</summary>
-
-- **Centralized Event System (🟢)**: Broadcast and listen without direct references.  
-- **Frame-Specific Tracking (🟢)**: Know exactly what happened this frame.  
-- **Flexible Registration (🟢)**: Add or remove listeners at will.  
-- **Logging & Debugging (🟢)**: Built-in event log for transparency.  
-- **Scalable Integration (🟢)**: Grows effortlessly with your project’s complexity.
-</details>
-
----
 .- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
 .- .-.. .-..  ... -.-- ... - . -- ...  .- .-. .  .-..--  .. -.  -.. . ...- . .-.. --- .--. -- . -. -  .- -. -..  - . ... - .. -. --.  
 
