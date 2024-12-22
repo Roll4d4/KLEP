@@ -1,3 +1,5 @@
+#12/22/2024 :: making soup and taking a break to work on some game stuff. Expect this to change rapidly.
+
 # KLEP: The Key-Lock Executable Process AI Framework
 
 KLEP is a modular, symbolic AI framework designed for simplicity, transparency, and flexibility. By using **keys**, **locks**, and **executables**, KLEP enables developers to create dynamic, adaptive systems for games, simulations, or experimental AI research. Whether you're building intelligent NPCs or testing symbolic reasoning, KLEP provides a robust foundation.
