@@ -155,15 +155,6 @@ KLEP is built for Unity (in C#) for interactive experimentation and rapid protot
 
 ---
 
-### 9. Angles and Demons (🟡)
-**What It Is:** A conceptual pair of advisors—one urging exploration (Aron) and the other favoring exploitation (Nora). They help KLEP adapt when facing uncertainty, toggling between broad searching (like MCTS) and known shortcuts (like A*).
-
-**Status:** Conceptual stage. The theory is there, but practical tests are needed to confirm its effectiveness in guiding decisions.
-
-[Learn More (Philosophy)](angles-demons.md)
-
----
-
 ### 10. The Trainyard (🟢)
 **What It Is:** A metaphorical “lab” that helped shape the understanding of KLEP. Historically and conceptually important, it offers a testing ground to ensure that keys, locks, and executables interact as intended before real-world application.
 
