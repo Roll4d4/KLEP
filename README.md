@@ -1,4 +1,4 @@
-#12/22/2024 :: making soup and taking a break to work on some game stuff. Expect this to change rapidly.
+Visit https://roll4d4.github.io/KLEP/ for the philosophies behind KLEP, this page will cover the practical implementation of KLEP into your project.
 
 # KLEP: The Key-Lock Executable Process AI Framework
 
