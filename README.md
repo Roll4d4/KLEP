@@ -27,7 +27,7 @@ Unless thats your thing.
 ### **1. Initialize KLEP**
 To start using KLEP, drag the `KLEPNeuron` script onto an empty GameObject and hit play. This auto-initializes the system.
 
-![GIF: Initializing KLEP](link-to-your-gif-here)
+![GIF: Initializing KLEP](https://github.com/Roll4d4/KLEP/blob/main/docs/images/Klep_Init.gif)
 
 ---
 
@@ -37,7 +37,7 @@ KLEP works with sensors to inject information into the neuron. For example, the 
 1. While the simulation is running, drag the `KeyboardSensor` script onto the entity.
 2. Input keys and see them propagate through the neuron.
 
-![GIF: Adding a Keyboard Sensor](link-to-your-gif-here)
+![GIF: Adding a Keyboard Sensor](https://github.com/Roll4d4/KLEP/blob/main/docs/images/Klep_AddSensor.gif)
 
 ---
 
@@ -47,7 +47,7 @@ KLEP allows you to create custom keys and locks to define and trigger behaviors.
 1. Create a key (e.g., `"JumpKey"`) in your sensor or through code.
 2. Define a lock that looks for `"JumpKey"` in an executable.
 
-![GIF: Creating Keys and Locks](link-to-your-gif-here)
+![GIF: Creating Keys and Locks](https://github.com/Roll4d4/KLEP/blob/main/docs/images/Klep_MakeKeyMakeLock.gif)
 
 ---
 
@@ -135,6 +135,20 @@ KLEP enables you to:
 4. Monitor and adapt key flow in real time.
 
 This modular approach allows for endless experimentation and applications, from intelligent NPCs to real-world problem solvers.
+Example: Dynamic AI Control with KLEP
+
+## *This example demonstrates how KLEP's modular architecture can be used with sensors, actions, and routers to drive an AI agent through user input.*
+
+    MouseData_KEY: Captures the Vector3 position of the mouse, enabling the agent to react to spatial input.
+    W_Hold: Indicates when the W key is held down, allowing the AI to interpret movement inputs.
+
+While recording and playback is not a built-in feature of KLEP, it showcases how custom executables can extend the system's functionality. For example, you can create an executable that records user input as keys and replays them into the neuron, allowing for automation of actions—like resource collection or repeating complex sequences.
+
+This approach highlights KLEP’s versatility and adaptability, showing how you can integrate specific game mechanics or experimental features seamlessly.
+
+![GIF: Creating Keys and Locks](https://github.com/Roll4d4/KLEP/blob/main/docs/images/Klep_brought_together.gif)
+
+I'm also working on a dedicated Wiki to provide in-depth guides, tutorials, and a community knowledge base—stay tuned for updates!
 
 ---
 
